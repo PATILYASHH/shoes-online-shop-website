@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Shoe Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> contact@shoeshop.com</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-text">
+                <h2>Discover the Perfect Pair</h2>
+                <p>Explore our latest collection of shoes.</p>
+                <div class="section section-intro">
+                <a href="#collection" id="viewCollectionBtn" class="btn">View Collection</a>
+                </div>
+            </div>
+        </section>
+        <div class="section section-collection" id="collection">
+        <section id="collection">
+            <h2>Our Collection</h2>
+            <div class="product-grid">
+                <!-- Repeat this block for each product -->
+                <div class="product">
+                    <img src="images/shoe1.jpg" alt="Shoe 1">
+                    <div class="product-details">
+                        <h3>Shoe Name 1</h3>
+                        <p>Description of the shoe. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/shoe1.jpg" alt="Shoe 2">
+                    <div class="product-details">
+                        <h3>Shoe Name 2</h3>
+                        <p>Description of the shoe. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/shoe1.jpg" alt="Shoe 3">
+                    <div class="product-details">
+                        <h3>Shoe Name 3</h3>
+                        <p>Description of the shoe. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="images/shoe1.jpg" alt="Shoe 3">
+                    <div class="product-details">
+                        <h3>Shoe Name 3</h3>
+                        <p>Description of the shoe. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/shoe1.jpg" alt="Shoe 3">
+                    <div class="product-details">
+                        <h3>Shoe Name 3</h3>
+                        <p>Description of the shoe. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        
+                    </div>
+                </div>
+                
+                
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Shoe Shop, we provide high-quality footwear that blends comfort with style. Our curated selection features the latest trends and timeless classics, ensuring you find the perfect pair for any occasion.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us through the contact information below:</p>
+            <ul>
+                <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+                <li><i class="fas fa-envelope"></i> contact@shoeshop.com</li>
+            </ul>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shoe Shop. All rights reserved.</p>
+    </footer>
+
+    <a href="https://patilyash.vercel.app" class="watermark" target="_blank">patilyash.vercel.app</a>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('viewCollectionBtn').addEventListener('click', function() {
+            document.getElementById('collection').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
